@@ -38,6 +38,7 @@ img {
 .header-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-nav {
@@ -121,9 +122,9 @@ img {
 }
 
 /* ----------HERO---------- */
+
 .hero {
     background-color: #2e2f42;
-    height: 600px;
 }
 
 .hero-title {
@@ -135,8 +136,7 @@ img {
     color: #fff;    
     display: block;
     margin: 0 auto;
-    width: 496px;
-    padding-top: 188px;
+    max-width: 496px;
     margin-bottom: 48px;
 }
 
@@ -149,10 +149,14 @@ img {
     cursor: pointer;
     display: block;
     margin: 0 auto;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     border: none;
     border-radius: 4px;
+}
+
+.hero-container {
+    padding: 188px 0 188px;
 }
 
 .hero-btn:hover,
@@ -161,6 +165,7 @@ img {
 }
 
 /* ----------ADVANTAGES---------- */
+
 .advantages {
 }
 
@@ -182,6 +187,10 @@ img {
     overflow: hidden;
 }
 
+.advantages-container {
+    padding: 120px 0 120px;
+}
+
 .advantages-list {
     display: flex;
     align-items: center;
@@ -189,7 +198,6 @@ img {
 }
 
 .advantages-item {
-    padding: 120px 0 120px;
     width: calc(( 100% - 72px ) / 4);
 }
 
@@ -203,7 +211,7 @@ img {
 }
 
 .advantages-subtitle {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .advantages-text,
@@ -213,10 +221,15 @@ img {
 }
 
 /* ----------TEAM---------- */
+
 .team {
     background-color: #f4f4fd;
 }
 
+.team-container {
+    padding: 120px 0 120px;
+
+}
 .team-title {
     font-size: 36px;
     line-height: 1.11;
@@ -224,14 +237,29 @@ img {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .team-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
+
 .team-item {
     background-color: #FFFFFF;
 }
+
 .team-img {
+    margin-bottom: 24px;
+}
+
+.text-container {
+    display: block;
+    align-items: center;
+    margin-bottom: 24px;
 }
 
 .team-subtitle {
@@ -248,6 +276,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
 }
+
 /* ----------PORTFOLIO---------- */
 .portfolio {
 }
